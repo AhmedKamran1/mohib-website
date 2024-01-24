@@ -115,7 +115,12 @@ const PcBuild = () => {
                   alignItems: "center",
                 }}
               >
-                <Image src="/corei5.jpg" height={40} width={40} />
+                <Image
+                  src="/corei5.jpg"
+                  alt="processor"
+                  height={40}
+                  width={40}
+                />
                 <Box>
                   <Typography variant="body1">{selected.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -127,7 +132,12 @@ const PcBuild = () => {
           >
             {processorList.map((value) => (
               <MenuItem key={value.item} value={value}>
-                <Image src="/corei5.jpg" height={30} width={30} />
+                <Image
+                  src="/corei5.jpg"
+                  alt="processor"
+                  height={30}
+                  width={30}
+                />
                 <Box>
                   <Typography variant="body1">{value.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -153,7 +163,12 @@ const PcBuild = () => {
                   alignItems: "center",
                 }}
               >
-                <Image src="/motherboard.jpg" height={40} width={40} />
+                <Image
+                  src="/motherboard.jpg"
+                  alt="motherboard"
+                  height={40}
+                  width={40}
+                />
                 <Box>
                   <Typography variant="body1">{selected.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -165,7 +180,12 @@ const PcBuild = () => {
           >
             {motherboardList.map((value) => (
               <MenuItem key={value.item} value={value}>
-                <Image src="/motherboard.jpg" height={30} width={30} />
+                <Image
+                  src="/motherboard.jpg"
+                  alt="motherboard"
+                  height={30}
+                  width={30}
+                />
                 <Box>
                   <Typography variant="body1">{value.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -192,7 +212,12 @@ const PcBuild = () => {
                     alignItems: "center",
                   }}
                 >
-                  <Image src={selected.image} height={40} width={40} />
+                  <Image
+                    src={selected.image}
+                    alt="selected-case"
+                    height={40}
+                    width={40}
+                  />
                   <Box>
                     <Typography variant="body1">{selected.item}</Typography>
                     <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -204,7 +229,12 @@ const PcBuild = () => {
             >
               {caseList.map((value) => (
                 <MenuItem key={value.item} value={value}>
-                  <Image src={value.image} height={30} width={30} />
+                  <Image
+                    src={value.image}
+                    alt="selected-case"
+                    height={30}
+                    width={30}
+                  />
                   <Box>
                     <Typography variant="body1">{value.item}</Typography>
                     <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -231,7 +261,7 @@ const PcBuild = () => {
                   alignItems: "center",
                 }}
               >
-                <Image src="/ram.png" height={40} width={40} />
+                <Image src="/ram.png" alt="ram" height={40} width={40} />
                 <Box>
                   <Typography variant="body1">{selected.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -243,7 +273,7 @@ const PcBuild = () => {
           >
             {ramList.map((value) => (
               <MenuItem key={value.item} value={value}>
-                <Image src="/ram.png" height={30} width={30} />
+                <Image src="/ram.png" alt="ram" height={30} width={30} />
                 <Box>
                   <Typography variant="body1">{value.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -269,7 +299,7 @@ const PcBuild = () => {
                   alignItems: "center",
                 }}
               >
-                <Image src="/ssd.jpg" height={40} width={40} />
+                <Image src="/ssd.jpg" alt="ssd" height={40} width={40} />
                 <Box>
                   <Typography variant="body1">{selected.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -281,7 +311,7 @@ const PcBuild = () => {
           >
             {ssdList.map((value) => (
               <MenuItem key={value.item} value={value}>
-                <Image src="/ssd.jpg" height={30} width={30} />
+                <Image src="/ssd.jpg" alt="ssd" height={30} width={30} />
                 <Box>
                   <Typography variant="body1">{value.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -307,7 +337,7 @@ const PcBuild = () => {
                   alignItems: "center",
                 }}
               >
-                <Image src="/hdd.jpg" height={40} width={40} />
+                <Image src="/hdd.jpg" alt="hdd" height={40} width={40} />
                 <Box>
                   <Typography variant="body1">{selected.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -319,7 +349,7 @@ const PcBuild = () => {
           >
             {hddList.map((value) => (
               <MenuItem key={value.item} value={value}>
-                <Image src="/hdd.jpg" height={30} width={30} />
+                <Image src="/hdd.jpg" alt="hdd" height={30} width={30} />
                 <Box>
                   <Typography variant="body1">{value.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -345,7 +375,7 @@ const PcBuild = () => {
                   alignItems: "center",
                 }}
               >
-                <Image src="/gpu.webp" height={40} width={40} />
+                <Image src="/gpu.webp" alt="gpu" height={40} width={40} />
                 <Box>
                   <Typography variant="body1">{selected.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -357,7 +387,7 @@ const PcBuild = () => {
           >
             {gpuList.map((value) => (
               <MenuItem key={value.item} value={value}>
-                <Image src="/gpu.webp" height={30} width={30} />
+                <Image src="/gpu.webp" alt="gpu" height={30} width={30} />
                 <Box>
                   <Typography variant="body1">{value.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -383,7 +413,7 @@ const PcBuild = () => {
                   alignItems: "center",
                 }}
               >
-                <Image src="/psu.jpg" height={40} width={40} />
+                <Image src="/psu.jpg" alt="psu" height={40} width={40} />
                 <Box>
                   <Typography variant="body1">{selected.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>
@@ -395,7 +425,7 @@ const PcBuild = () => {
           >
             {psuList.map((value) => (
               <MenuItem key={value} value={value}>
-                <Image src="/psu.jpg" height={30} width={30} />
+                <Image src="/psu.jpg" alt="psu" height={30} width={30} />
                 <Box>
                   <Typography variant="body1">{value.item}</Typography>
                   <Typography variant="body2" sx={{ color: "darkred" }}>

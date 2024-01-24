@@ -17,7 +17,6 @@ const Marketing = () => {
     >
       <Grid item xs={8}>
         <Typography
-          PC
           variant="h3"
           fontWeight={600}
           sx={{
@@ -40,6 +39,7 @@ const Marketing = () => {
         >
           <Image
             src="/games.png"
+            alt="games"
             height={300}
             width={550}
             style={{
@@ -89,6 +89,7 @@ const Marketing = () => {
           </Box>
           <Image
             src="/games.png"
+            alt="games"
             height={300}
             width={550}
             style={{

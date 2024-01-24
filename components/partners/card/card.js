@@ -22,8 +22,8 @@ const Card = () => {
   ];
   return (
     <Grid container columnSpacing={2} mt={2} justifyContent="center">
-      {cards.map((card) => (
-        <Grid item xs={2.5}>
+      {cards.map((card, index) => (
+        <Grid item xs={2.5} key={index}>
           <StyledCard>
             <Typography
               variant="body1"

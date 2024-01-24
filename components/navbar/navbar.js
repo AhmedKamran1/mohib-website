@@ -19,7 +19,7 @@ const Navbar = () => {
         </Link>
         <NavLinks>
           {links.map((link) => (
-            <Link href="/">
+            <Link href="/" key={link}>
               <StyledButton color="inherit">
                 <Typography variant="body1" fontWeight={600}>
                   {link}

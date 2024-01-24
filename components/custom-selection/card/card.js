@@ -43,15 +43,14 @@ const Card = () => {
     {
       title: "Thunder Custom",
       category: "Custom",
-      description:
-        "Build From Scratch",
+      description: "Build From Scratch",
       pricing: "????",
     },
   ];
   return (
     <Grid container columnSpacing={2} mt={10}>
-      {cards.map((card) => (
-        <Grid item xs={2}>
+      {cards.map((card, index) => (
+        <Grid item xs={2} key={index}>
           <StyledCard>
             <Box textAlign="center">
               <Typography
